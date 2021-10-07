@@ -6,10 +6,13 @@
 -->
 <html>
 	<head>
-		<title>Research</title>
+		<title>Victor Drouin-Touchette - Research</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script type="text/javascript" charset="utf-8" 
+		src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,
+		https://vincenttam.github.io/javascripts/MathJaxLocal.js"></script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -28,16 +31,38 @@
 						<!-- Content -->
 							<section id="content" class="main">
 								<h2>Fractional vortices and confinement</h2>
-								<span class="image left"><img src="images/imgEPotts2.png" alt="" /></span>
-								<p>Astonishing physics sometimes reveals itself in the most unlikely places. The melting of 54COOBC,a molecular liquid crystal film of a single layer, exhibits a phase with a hidden order parameter.  In order to explain the unexpected specific heat signal and the peculiar sequence of phase transitions, I studied the finite temperature phase diagram of a system of coupled classical vectors. The results, obtained using a specially devised Monte-Carlo algorithm, show the existence of a new phase which was not previously found. The nematic-hexatic model studied encompasses the competition of nematic molecular order and hexatic bond-orientational order; the challenge here lies in the competition between the two global symmetries. These end up in a state of relative three-state Potts locking. </p>
-								<p>The hidden order phase involves a coexistence of free vortices of unit charge with long-range discrete Potts order. The unit charge vortices are bound states of three fractional vortices, and resemble baryons formed from a bound state of three confined quarks. Thus, the solution to this long-standing mystery phase in the liquid crystals is a classical analog of quark confinement.</p>
-								<p>Our preprint is available on the arXiv, or <a href="documents/EPotts_vf.pdf">here</a>. I am currently exploring whether dual representations of this model can further reveal the relative order phase.</p>
-								<h2>Iron-Based Superconductors</h2>
-								<p>The iron-based superconductors are multiorbital systems, in which each iron atom is contained within a tetrahedral environment. The Hund's coupling tends to align the spins in the different orbitals, and this is an important driver of strong electron correlations. </p>
-								<p>I have developed a many-body treatment of the Hund-Kondo model, in which the iron atom is viewed as an impurity in the metallic environment. Using slave-fermion methods, this leads to a set of self-consistent integral equations for the self energies of holons and spinons which describe the valence and spin fluctuations of the iron atom. </p>
-								<p>The first publication stemming from this work was published in <a href="documents\PRB-Hund.pdf">PRB</a> where we studied the three-orbital Hund-Kondo model using large-N Schwinger Bosons. A follow-up of this work which includes valence fluctuations is in preparation. We are now extending the approach to include spin-orbit coupling at the impurity, which can lead to local pairing of the electrons.</p>
+								<span class="image left"><img src="images/imgEPotts.jpg" alt="" /></span>
+								<p>Astonishing physics sometimes reveals itself in the most unlikely places. The melting of 54COOBC,a molecular liquid crystal film of a single layer, exhibits a phase with a hidden order parameter.  In order to explain the unexpected specific heat signal and the peculiar sequence of phase transitions, I studied the finite temperature phase diagram of a system of coupled classical vectors. Our results, obtained using a specially devised Monte-Carlo algorithm and analytical arguments, show the existence of a new phase which was not previously found (our open code can be found <a href="https://github.com/Orth-Research/Potts-XY">here</a>). The nematic-hexatic model that we studied encompasses the competition of nematic molecular order ($\varphi$) and hexatic bond-orientational order ($\vartheta$). Shown below is a rescaled verison of this model: </p>
+
+								<div class="myeqn">
+									\[ \mathcal{H} = - J_2 \sum_{\langle i,j \rangle} \cos{[\theta_{i} - \theta_j]} - J_6 \sum_{\langle i,j \rangle}  \cos{[3(\phi_{i} - \phi_j)]} - \lambda \sum_{i} \cos{[3(\theta_i - \phi_i)]} \]
+								</div>
+
+								<p>The challenge in this model is the presence of two global symmetries: a global $\text{O(2)}$ rotational symmetry as both nematic and hexatic rotate in unison and a relative $\mathbb{Z}_3$ discrete symmetry due to the coupling $\lambda \cos{[3(\vartheta - \varphi)]}$, where $\sigma = \vartheta - \varphi  \rightarrow \sigma + \frac{2\pi}{3} n$ with $n = -1, 0, 1$.  The interplay between these two symmetries is the emergence of a Potts phase transition, which we believe describes the hidden order phase observed in 54COOBC. In our simulations, this phase (see figure above for the resulting finite temperature phase diagram, with $\Delta \sim J_2/J_6$) develops in a very narrow temperature range, which was missed in previous work. </p>
+
+								<span class="image right"><img src="images/fig_composite.png" alt="" /></span>
+								
+								<p>The hidden order $\mathbb{Z}_3$ phase involves a coexistence of free vortices of charge $\pm1$ with long-range discrete Potts order. The charge $\pm1$ vortices are bound states of three fractional vortices of charge $1/3$ (see figure on the right for a schematic of the fractional [A] and composite vortices [B]), and resemble baryons formed from a bound state of three confined quarks. In the coupled XY model, each &quot; quark &quot; is bound by a &quot; string &quot; formed from a Potts domain wall. Thus, the solution to this long-standing mystery phase in the liquid crystals is a classical analog of quark confinement. </p>
+								
+								<p>Our preprint is available on the arXiv, or <a href="documents/EPotts_vf.pdf">here</a> for the latest version. It is currently under review at PRX. I am now exploring whether dual representations of this model can provide further insight into the order parameter of this relative order phase.</p>
+
+								<h2>Unconventional Superconductivity</h2>
+
+								<p>The iron-based superconductors, discovered in 2008, are a family of high-temperature superconductors with properties that are irreconcilable with BCS theory. Although a clear gap $\Delta_c$ opens, the nature of their electron pairing is still unknown, despite being the subject of tremendous amounts of research. This is a remarkably diverse family, with some presenting magnetic order, all with radically different Fermi surfaces (the electrons' momentum spectrum), and with $T_c$ itself varying substantially. Yet, it was shown that the ratio of their maximal gap to critical temperature is fixed: $\Delta_{c,\rm max}/T_c \simeq 7.2$. This universal relation suggests a common underlying mechanism. Moreover, the wide variation of the Fermi surface morphology across the family of iron-based superconductors leads us to consider a local rather than momentum-based origin for the electron pairing.</p>
+
+
+								<p>The iron-based superconductors are multiorbital systems, in which each iron atom is contained within a tetrahedral environment (see a. in figure below), with an average occupation of $2$ electrons in the $t_{\rm 2g}$ orbitals. The Hund's coupling $J_H$ tends to align the spins in the different orbitals, and this is an important driver of strong electron correlations. The Hund's coupling $J_H$ suppresses the intersite hopping of electrons that are oriented oppositely to the local magnetization. </p>
+
+								<p>I have developed a many-body treatment of the Hund-Kondo model, in which the iron atom is viewed as an impurity in the metallic environment. Using a method that combined large-N Schwinger bosons with slave-fermions, this leads to a set of self-consistent integral equations for the self energies of the holons ($\chi$) and spinons ($b$) (see d in figure below) which describe the valence and spin fluctuations of the iron atom. The work has been benchmarked by comparing the predicted dynamics and thermodynamics with previous work on the Hund coupled iron atom. The phase diagram derived from this method is shown below in c. As the Hund coupling ($J_H$) is increased (moving from right to left), the spin-orbital separated phase opens up (in light red). This is associated with large spin fluctuation and gapped orbital fluctuations, and extends to extremely low temperatures.</p>
+
+								<p> The first publication stemming from this work was published in <a href="documents\PRB-Hund.pdf">PRB</a>. A follow-up which includes valence fluctuations is in preparation. We then realized that the incorporation of spin orbit coupling was essential to the local physics. Spin-orbit coupling, which mixes orbital and spin degrees of freedom, delocalizes the holons within the different orbitals, allowing for the development of pair correlations. I am now extending the approach to include spin-orbit coupling at the impurity, which can lead to local pairing of the electrons (see figure d).</p>
+
+
+								<span class="image fit"><img src="images/sc_fig1.png" alt="" /></span>
+
 								<h2>Frustrated Magnetism: Spinels</h2>
-								<p>I worked with Rutgers Postdoc Sobhit Singh and Pr. Jak Chakhalian's group. Our <a href="documents/NanoLetters2021.pdf">work</a> was published in Nano Letters. </p>
+
+								<p>Pr. Jak Chakhalian's group at Rutgers has synthesized ultrathin $\text{CoCr}_2\text{O}_4$ slices, which feature three triangular and one kagome planes. The absence of a spin ordering or freezing transition was observed down to 0.03 K, in the presence of strong antiferromagnetic correlations. Working with Postdoc Sobhit Singh, our calculations demonstrate the emergence of highly degenerate magnetic ground states at the 0 K limit, due to the competition among multiply altered exchange interactions. Our <a href="documents/NanoLetters2021.pdf">work</a> was published in Nano Letters. </p>
 							</section>
 
 					</div>
@@ -45,11 +70,9 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<section>
-							<h2>Of Interest</h2>
-							<p>I maintain a list of interesting web ressources <br /> 
-							that I frequently visit.</p>
+							<p>To return to the main page:</p>
 							<ul class="actions">
-								<li><a href="links.html" class="button">Learn More</a></li>
+								<li><a href="index.html" class="button">Click here</a></li>
 							</ul>
 						</section>
 						<section>
