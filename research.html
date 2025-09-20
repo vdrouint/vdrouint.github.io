@@ -6,14 +6,11 @@
 -->
 <html>
 	<head>
-		<title>Victor Drouin-Touchette - Research</title>
+		<title>Victor Drouin-Touchette</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/academicons.css" />
-		<script type="text/javascript" charset="utf-8" 
-		src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,
-		https://vincenttam.github.io/javascripts/MathJaxLocal.js"></script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -22,74 +19,56 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-					<header id="header">
-						<h1>Research</h1>
+					<header id="header" class="alt">
+						<!-- <span class="image avatar48"><img src="images/img_vic2.jpg" alt="" /></span> -->
+							<h1 id="title">Victor Drouin-Touchette</h1>
+							<p>Researcher in Quantum Algorithms and Applications</p>
 					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html" style="color:black">Home</a></li>
+							<li><a href="research.html" class="active" style="color:black">Research</a></li>
+							<li><a href="publications.html" style="color:black">Publications</a></li>
+							<li><a href="teaching.html" style="color:black">Teaching</a></li>
+							<li><a href="advising.html" style="color:black">Advising</a></li>
+							<li><a href="research_fr.html" style="color:black">Français</a></li>
+						</ul>
+					</nav>
 
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Content -->
-							<section id="content" class="main">
-								<h2>Majorana-Bose-Hubbard model</h2>
-								<span class="image left"><img src="images/imgEPotts.jpg" alt="" /></span>
-								<p>In this work in progress, I study the Majorana-Bose-Hubbard model in 2D using a new quantum Monte-Carlo approach based on the worm algorithm. </p>
 
-								<h2>Fractional vortices and confinement</h2>
-								<span class="image left"><img src="images/imgEPotts.jpg" alt="" /></span>
-								<p>Astonishing physics sometimes reveals itself in the most unlikely places. The melting of 54COOBC,a molecular liquid crystal film of a single layer, exhibits a phase with a hidden order parameter.  In order to explain the unexpected specific heat signal and the peculiar sequence of phase transitions, I studied the finite temperature phase diagram of a system of coupled classical vectors. Our results, obtained using a specially devised Monte-Carlo algorithm and analytical arguments, show the existence of a new phase which was not previously found (our open code can be found <a href="https://github.com/Orth-Research/Potts-XY">here</a>). The nematic-hexatic model that we studied encompasses the competition of nematic molecular order ($\varphi$) and hexatic bond-orientational order ($\vartheta$). Shown below is a rescaled verison of this model: </p>
+                        <section id="content" class="main">
+							This page is in construction.
 
-								<div class="myeqn">
-									\[ \mathcal{H} = - J_2 \sum_{\langle i,j \rangle} \cos{[\theta_{i} - \theta_j]} - J_6 \sum_{\langle i,j \rangle}  \cos{[3(\phi_{i} - \phi_j)]} - \lambda \sum_{i} \cos{[3(\theta_i - \phi_i)]} \]
-								</div>
+                            <!-- <h2>Quantum Operations Research</h2>
+                            <p>In my work at the department of electrical and computer engineering of the Université de Sherbrooke, I work on ... </p>
 
-								<p>The challenge in this model is the presence of two global symmetries: a global $\text{O(2)}$ rotational symmetry as both nematic and hexatic rotate in unison and a relative $\mathbb{Z}_3$ discrete symmetry due to the coupling $\lambda \cos{[3(\vartheta - \varphi)]}$, where $\sigma = \vartheta - \varphi  \rightarrow \sigma + \frac{2\pi}{3} n$ with $n = -1, 0, 1$.  The interplay between these two symmetries is the emergence of a Potts phase transition, which we believe describes the hidden order phase observed in 54COOBC. In our simulations, this phase (see figure above for the resulting finite temperature phase diagram, with $\Delta \sim J_2/J_6$) develops in a very narrow temperature range, which was missed in previous work. </p>
+                            <h2>Quantum Machine Learning</h2>
+                            <p>My work with Pr. Stefanos Kourtis. </p>
 
-								<span class="image right"><img src="images/fig_composite.png" alt="" /></span>
-								
-								<p>The hidden order $\mathbb{Z}_3$ phase involves a coexistence of free vortices of charge $\pm1$ with long-range discrete Potts order. The charge $\pm1$ vortices are bound states of three fractional vortices of charge $1/3$ (see figure on the right for a schematic of the fractional [A] and composite vortices [B]), and resemble baryons formed from a bound state of three confined quarks. In the coupled XY model, each &quot; quark &quot; is bound by a &quot; string &quot; formed from a Potts domain wall. Thus, the solution to this long-standing mystery phase in the liquid crystals is a classical analog of quark confinement. </p>
-								
-								<p>This paper is now published at Physical Review X. You can see it <a href="https://link.aps.org/doi/10.1103/PhysRevX.12.011043">here</a>, in open access. I am now exploring whether dual representations of this model can provide further insight into the order parameter of this relative order phase, as well as a renormalization group study of the composite vortices.</p>
+                            <h2>Simulation of strongly correlated systems</h2>
+                            <p>Strong ties to above. Classical and quantum tools to tackle it. </p> -->
 
-								<h2>Hund's Coupling and Unconventional Superconductivity</h2>
+                            <!-- <div class="myeqn">
+                                \[ \mathcal{H} = - J_2 \sum_{\langle i,j \rangle} \cos{[\theta_{i} - \theta_j]} - J_6 \sum_{\langle i,j \rangle}  \cos{[3(\phi_{i} - \phi_j)]} - \lambda \sum_{i} \cos{[3(\theta_i - \phi_i)]} \]
+                            </div> -->
+                            <!-- <span class="image left"><img src="images/imgEPotts.jpg" alt="" /></span> -->
 
-								<p>The iron-based superconductors, discovered in 2008, are a family of high-temperature superconductors with properties that are irreconcilable with BCS theory. Although a clear gap $\Delta_c$ opens, the nature of their electron pairing is still unknown, despite being the subject of tremendous amounts of research. This is a remarkably diverse family, with some presenting magnetic order, all with radically different Fermi surfaces (the electrons' momentum spectrum), and with $T_c$ itself varying substantially. Yet, it was shown that the ratio of their maximal gap to critical temperature is fixed: $\Delta_{c,\rm max}/T_c \simeq 7.2$. This universal relation suggests a common underlying mechanism. Moreover, the wide variation of the Fermi surface morphology across the family of iron-based superconductors leads us to consider a local rather than momentum-based origin for the electron pairing.</p>
-
-
-								<p>The iron-based superconductors are multiorbital systems, in which each iron atom is contained within a tetrahedral environment, with an average occupation of $2$ electrons in the $t_{\rm 2g}$ orbitals. The Hund's coupling $J_H$ tends to align the spins in the different orbitals, and this is an important driver of strong electron correlations. The Hund's coupling $J_H$ suppresses the intersite hopping of electrons that are oriented oppositely to the local magnetization. </p>
-
-								<p>I have developed a many-body treatment of the Hund-Kondo model, in which the iron atom is viewed as an impurity in the metallic environment. Using a method that combined large-N Schwinger bosons with slave-fermions, this leads to a set of self-consistent integral equations for the self energies of the holons ($\chi$) and spinons ($b$) (see figure below) which describe the valence and spin fluctuations of the iron atom. The work has been benchmarked by comparing the predicted dynamics and thermodynamics with previous work on the Hund coupled iron atom. The phase diagram derived from this method is shown below in c. As the Hund coupling ($J_H$) is increased (moving from right to left), the spin-orbital separated phase opens up (in light red). This is associated with large spin fluctuation and gapped orbital fluctuations, and extends to extremely low temperatures.</p>
-
-								<span class="image right"><img src="images/hund1.JPG" alt="" width="64"/></span>
-
-								<p> The first publication stemming from this work was published in <a href="https://link.aps.org/doi/10.1103/PhysRevB.103.205147">Physical Review B</a>. You can find the pdf <a href="documents\PRB-Hund.pdf">here</a>. </p>
-
-								<p>A follow-up which includes valence fluctuations was released as a preprint on the arxiv on 03/11/2022, see <a href="https://arxiv.org/abs/2203.05172">here</a>. Our past work was done in the limit of three electrons among three orbitals, which is unrealistic for the iron-based compounds. It was therefore needed to include mixed valence states. A careful study of large emergent moment shows that it disappears upon hole doping, and that that phase presents singular features due to nearly-frozen charge degrees of freedom. The phase diagram is presented below. Logarithmic corrections due to a slow approach to Kondo screening are responsible for this singular scaling. This unusual spin susceptibility could act as the see to local pairing in the iron-based superconductors. Indeed, we show through a Eliashberg approch that such singular spin suscceptibilities can lead to superconductivity with the $\Delta_{c,\rm max}/T_c \simeq 7.2$ relation. </p>
-
-								<span class="image right"><img src="images/hund2.JPG" alt="" width="64"  /></span>
-
-								<p> I am now working to extend this work to include pairing diagrams for the spinons and the holons. This is inspired by the tRVB proposal by Coleman, Komijani, Konig. The interaction of spin-orbit coupling and Hund's coupling leads to easy-plane anisotropy in the Hund's ferromagnetic states, which leads to triplet spinon pairing. Including this into a DMFT-like approach is the subject of our current work.</p>
-
-								<h2>Miscelaneous Projects: Spinels</h2>
-
-								<p>I remain deeply interested in issues in frustrated magnetism. Through corridor conversations, I got to work with my Rutgers colleagues on some exciting experiments. Pr. Jak Chakhalian's group at Rutgers has synthesized ultrathin $\text{CoCr}_2\text{O}_4$ slices, which feature three triangular and one kagome planes. The absence of a spin ordering or freezing transition was observed down to 0.03 K, in the presence of strong antiferromagnetic correlations. Working with Postdoc Sobhit Singh, our calculations demonstrate the emergence of highly degenerate magnetic ground states at the 0 K limit, due to the competition among multiply altered exchange interactions. Our <a href="documents/NanoLetters2021.pdf">work</a> was published in Nano Letters. </p>
-							</section>
+                        </section>
 
 					</div>
 
 				<!-- Footer -->
 					<footer id="footer">
 						<section>
-							<p>To return to the main page:</p>
-							<ul class="actions">
-								<li><a href="index.html" class="button">Click here</a></li>
-							</ul>
-						</section>
-						<section>
 							<h2>Contact Information</h2>
 							<dl class="alt">
 								<dt>Address</dt>
-								<dd>Office C1-3108, Pavillon J-A. Bombardier, Université de Sherbrooke, Québec, Canada</dd>
+								<dd>Département de génie électrique et de génie informatique, Université de Sherbrooke, Québec, Canada</dd>
 								<!-- <dt>Phone</dt>
 								<dd>(000) 000-0000 x 0000</dd> -->
 								<dt>Email</dt>
@@ -97,14 +76,14 @@
 							</dl>
 							<ul class="icons">
 								<li><a href="https://www.linkedin.com/in/victor-drouin-touchette-165030124/" class="icon brands fa-linkedin" style="color:inherit"><span class="label">Linkedin</span></a></li>
-								<li><a href="https://twitter.com/VictorDrouin2" class="icon brands fa-twitter" style="color:inherit"><span class="label">Twitter</span></a></li>
 								<li><a href="https://github.com/vdrouint" class="icon brands fa-github" style="color:inherit"><span class="label">Github</span></a></li>
 								<li><a href="http://scholar.google.com/citations?user=U_tTp8cAAAAJ&hl=en" class="ai ai-google-scholar-square" style="color:inherit;border-bottom:none"></a></li>
-								<li><a href="mailto: victor.drouin-touchette@usherbrooke.ca" class="icon solid fa-envelope" style="color:inherit"><span class="label">Email</span></a></li>
+								<!-- <li><a href="mailto: victor.drouin-touchette@usherbrooke.ca" class="icon solid fa-envelope" style="color:inherit"><span class="label">Email</span></a></li> -->
 							</ul>
 						</section>
-						<p class="copyright">&copy; Victor Drouin-Touchette (2023). Design: <a href="https://html5up.net" style="color:inherit">HTML5 UP</a>.</p>
+						<p class="copyright">&copy; Victor Drouin-Touchette (2025). Design: <a href="https://html5up.net" style="color:inherit">HTML5 UP</a>.</p>
 					</footer>
+
 			</div>
 
 		<!-- Scripts -->
